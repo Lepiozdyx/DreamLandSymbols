@@ -5,7 +5,7 @@ import SwiftUI
 class NetworkManager: ObservableObject {
     @Published private(set) var gameURL: URL?
     
-    static let initialURL = URL(string: "https://google.com")!
+    static let initialURL = URL(string: "https://dreamlandsym.pro/app")!
     private let storage: UserDefaults
     private var didSaveURL = false
     private let requestTimeout: TimeInterval = 8.0
