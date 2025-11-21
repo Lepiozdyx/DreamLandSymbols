@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A2B3C001 /* DreamLandSymbolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C101 /* DreamLandSymbolsApp.swift */; };
+		1A2B3C007 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C107 /* Colors.swift */; };
+		1A2B3C011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C201 /* Assets.xcassets */; };
+		1A2B3C012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B3C202 /* LaunchScreen.storyboard */; };
+		1A2B3C015 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C113 /* HomeView.swift */; };
+		1A2B3C016 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C114 /* CalendarView.swift */; };
+		1A2B3C017 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C115 /* StatisticsView.swift */; };
+		1A2B3C019 /* DreamRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C117 /* DreamRecord.swift */; };
+		1A2B3C021 /* DreamEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C119 /* DreamEntryView.swift */; };
+		1A2B3C022 /* DreamStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C120 /* DreamStorageManager.swift */; };
+		1A2B3C023 /* DreamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C121 /* DreamDetailView.swift */; };
+		1A2B3C024 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C122 /* TabBar.swift */; };
+		FA78171C2ED0A70100693976 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78171B2ED0A70100693976 /* AppStateManager.swift */; };
+		FA78171E2ED0A72100693976 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78171D2ED0A72100693976 /* NetworkManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A2B3C101 /* DreamLandSymbolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamLandSymbolsApp.swift; sourceTree = "<group>"; };
+		1A2B3C107 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1A2B3C113 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1A2B3C114 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		1A2B3C115 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		1A2B3C117 /* DreamRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamRecord.swift; sourceTree = "<group>"; };
+		1A2B3C119 /* DreamEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamEntryView.swift; sourceTree = "<group>"; };
+		1A2B3C120 /* DreamStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamStorageManager.swift; sourceTree = "<group>"; };
+		1A2B3C121 /* DreamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamDetailView.swift; sourceTree = "<group>"; };
+		1A2B3C122 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		1A2B3C201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A2B3C202 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A2B3C301 /* DreamLandSymbols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLandSymbols.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2B3C401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA78171B2ED0A70100693976 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
+		FA78171D2ED0A72100693976 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FA78179D2ED0AD2900693976 /* MainTab */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MainTab; sourceTree = "<group>"; };
+		FA78179E2ED0AD3700693976 /* Loading */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Loading; sourceTree = "<group>"; };
+		FA78179F2ED0AD4D00693976 /* Content */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Content; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A2B3C501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A2B3C601 = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C701 /* DreamLandSymbols */,
+				1A2B3C801 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A2B3C701 /* DreamLandSymbols */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C401 /* Info.plist */,
+				1A2B3C901 /* App */,
+				1A2B3C905 /* Features */,
+				1A2B3C903 /* Shared */,
+				1A2B3C904 /* Resources */,
+				1A2B3C201 /* Assets.xcassets */,
+			);
+			path = DreamLandSymbols;
+			sourceTree = "<group>";
+		};
+		1A2B3C801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C301 /* DreamLandSymbols.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A2B3C901 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C101 /* DreamLandSymbolsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1A2B3C903 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3CA01 /* Models */,
+				1A2B3CA04 /* Managers */,
+				1A2B3CA03 /* UI */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1A2B3C904 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C202 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A2B3C905 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FA78179E2ED0AD3700693976 /* Loading */,
+				FA78179F2ED0AD4D00693976 /* Content */,
+				1A2B3C906 /* Home */,
+				1A2B3C907 /* Calendar */,
+				1A2B3C908 /* Statistics */,
+				1A2B3C909 /* DreamEntry */,
+				FA78179D2ED0AD2900693976 /* MainTab */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1A2B3C906 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C113 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1A2B3C907 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C114 /* CalendarView.swift */,
+				1A2B3C121 /* DreamDetailView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		1A2B3C908 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C115 /* StatisticsView.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		1A2B3C909 /* DreamEntry */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C119 /* DreamEntryView.swift */,
+			);
+			path = DreamEntry;
+			sourceTree = "<group>";
+		};
+		1A2B3CA01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C117 /* DreamRecord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A2B3CA03 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C107 /* Colors.swift */,
+				1A2B3CB01 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1A2B3CA04 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA78171D2ED0A72100693976 /* NetworkManager.swift */,
+				FA78171B2ED0A70100693976 /* AppStateManager.swift */,
+				1A2B3C120 /* DreamStorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1A2B3CB01 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B3C122 /* TabBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A2B3CC01 /* DreamLandSymbols */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A2B3CD01 /* Build configuration list for PBXNativeTarget "DreamLandSymbols" */;
+			buildPhases = (
+				1A2B3CE01 /* Sources */,
+				1A2B3C501 /* Frameworks */,
+				1A2B3CF01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FA78179D2ED0AD2900693976 /* MainTab */,
+				FA78179E2ED0AD3700693976 /* Loading */,
+				FA78179F2ED0AD4D00693976 /* Content */,
+			);
+			name = DreamLandSymbols;
+			productName = DreamLandSymbols;
+			productReference = 1A2B3C301 /* DreamLandSymbols.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A2B3CD02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					1A2B3CC01 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 1A2B3CD03 /* Build configuration list for PBXProject "DreamLandSymbols" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ru;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 1A2B3C601;
+			productRefGroup = 1A2B3C801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A2B3CC01 /* DreamLandSymbols */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A2B3CF01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2B3C011 /* Assets.xcassets in Resources */,
+				1A2B3C012 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A2B3CE01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2B3C001 /* DreamLandSymbolsApp.swift in Sources */,
+				FA78171C2ED0A70100693976 /* AppStateManager.swift in Sources */,
+				FA78171E2ED0A72100693976 /* NetworkManager.swift in Sources */,
+				1A2B3C015 /* HomeView.swift in Sources */,
+				1A2B3C016 /* CalendarView.swift in Sources */,
+				1A2B3C017 /* StatisticsView.swift in Sources */,
+				1A2B3C019 /* DreamRecord.swift in Sources */,
+				1A2B3C021 /* DreamEntryView.swift in Sources */,
+				1A2B3C022 /* DreamStorageManager.swift in Sources */,
+				1A2B3C023 /* DreamDetailView.swift in Sources */,
+				1A2B3C007 /* Colors.swift in Sources */,
+				1A2B3C024 /* TabBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A2B3CD11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A2B3CD12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A2B3CD21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DreamLandSymbols/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamlandsymbols.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1A2B3CD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DreamLandSymbols/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamlandsymbols.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A2B3CD01 /* Build configuration list for PBXNativeTarget "DreamLandSymbols" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2B3CD21 /* Debug */,
+				1A2B3CD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A2B3CD03 /* Build configuration list for PBXProject "DreamLandSymbols" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2B3CD11 /* Debug */,
+				1A2B3CD12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A2B3CD02 /* Project object */;
+}

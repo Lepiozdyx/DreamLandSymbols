@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <!-- Background -->
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="background-view">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" name="appBackground"/>
+                            </view>
+                            
+                            <!-- Logo Container -->
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="logo-container">
+                                <rect key="frame" x="96.5" y="376" width="200" height="100"/>
+                                <subviews>
+                                    <!-- App Icon Placeholder -->
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icon-view">
+                                        <rect key="frame" x="75" y="10" width="50" height="50"/>
+                                        <color key="backgroundColor" name="appPrimary"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="icon-width"/>
+                                            <constraint firstAttribute="height" constant="50" id="icon-height"/>
+                                        </constraints>
+                                    </view>
+                                    
+                                    <!-- App Name -->
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Template App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="app-name-label">
+                                        <rect key="frame" x="0.0" y="70" width="200" height="30"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
+                                        <color key="textColor" name="appText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="container-width"/>
+                                    <constraint firstAttribute="height" constant="100" id="container-height"/>
+                                    <constraint firstItem="icon-view" firstAttribute="centerX" secondItem="logo-container" secondAttribute="centerX" id="icon-center-x"/>
+                                    <constraint firstItem="icon-view" firstAttribute="top" secondItem="logo-container" secondAttribute="top" constant="10" id="icon-top"/>
+                                    <constraint firstItem="app-name-label" firstAttribute="leading" secondItem="logo-container" secondAttribute="leading" id="label-leading"/>
+                                    <constraint firstItem="app-name-label" firstAttribute="trailing" secondItem="logo-container" secondAttribute="trailing" id="label-trailing"/>
+                                    <constraint firstItem="app-name-label" firstAttribute="top" secondItem="icon-view" secondAttribute="bottom" constant="10" id="label-top"/>
+                                    <constraint firstAttribute="bottom" secondItem="app-name-label" secondAttribute="bottom" id="label-bottom"/>
+                                </constraints>
+                            </view>
+                            
+                            <!-- Subtitle -->
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Template App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="subtitle-label">
+                                <rect key="frame" x="50" y="496" width="293" height="20"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
+                                <color key="textColor" name="appTextSecondary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            
+                            <!-- Loading Indicator -->
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="loading-indicator">
+                                <rect key="frame" x="186.5" y="736" width="20" height="20"/>
+                                <color key="color" name="appPrimary"/>
+                            </activityIndicatorView>
+                            
+                                            <!-- App Branding -->
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Template App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="branding-label">
+                                <rect key="frame" x="50" y="776" width="293" height="16"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" name="appTextSecondary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        
+                        <color key="backgroundColor" name="appBackground"/>
+                        <constraints>
+                            <!-- Background -->
+                            <constraint firstItem="background-view" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="bg-leading"/>
+                            <constraint firstItem="background-view" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="bg-trailing"/>
+                            <constraint firstItem="background-view" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="bg-top"/>
+                            <constraint firstItem="background-view" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="bg-bottom"/>
+                            
+                            <!-- Logo Container -->
+                            <constraint firstItem="logo-container" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="logo-center-x"/>
+                            <constraint firstItem="logo-container" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="logo-center-y"/>
+                            
+                            <!-- Subtitle -->
+                            <constraint firstItem="subtitle-label" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="subtitle-leading"/>
+                            <constraint firstItem="subtitle-label" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-50" id="subtitle-trailing"/>
+                            <constraint firstItem="subtitle-label" firstAttribute="top" secondItem="logo-container" secondAttribute="bottom" constant="20" id="subtitle-top"/>
+                            
+                            <!-- Loading Indicator -->
+                            <constraint firstItem="loading-indicator" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="loading-center-x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="loading-indicator" secondAttribute="bottom" constant="96" id="loading-bottom"/>
+                            
+                            <!-- Branding -->
+                            <constraint firstItem="branding-label" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="branding-leading"/>
+                            <constraint firstItem="branding-label" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-50" id="branding-trailing"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="branding-label" secondAttribute="bottom" constant="60" id="branding-bottom"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+                    <namedColor name="appBackground">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+                    <namedColor name="appPrimary">
+            <color red="0.72156862745098038" green="0.52549019607843139" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+                    <namedColor name="appText">
+            <color red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+                    <namedColor name="appTextSecondary">
+            <color red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document> 
